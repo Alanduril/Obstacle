@@ -25,11 +25,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-
 	UPROPERTY(EditAnywhere, Category="Moving")
 	FVector PlatformVelocity = FVector(100,0,0);
 	UPROPERTY (EditAnywhere, Category="Moving")
-	float DistanceToTravel = 100;
+	float MoveDistance = 100;
 
 	UPROPERTY(EditAnywhere, Category="Rotation")
 	FRotator RotationVelocity;
